@@ -1,6 +1,9 @@
 ## bangerquotes
 ### just another cli tool for generating quotes
 
+<img width="557" alt="image" src="https://user-images.githubusercontent.com/66871571/191100283-6d596126-d373-4710-8c24-985510115b66.png">
+
+
 #### How to setup?
 
 ##### Build the project and run the binary
