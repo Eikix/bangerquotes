@@ -1,4 +1,5 @@
 use serde::{Serialize, Deserialize};
+ use colored::*;
 
 
 #[derive(Serialize, Deserialize, Debug)]
@@ -37,9 +38,9 @@ async fn main() {
         q => get_quote(q).await,
     };
     if let Ok(q) = quote {
-        println!("{} - {}", q.content, q.author);
+        println!("\n {} - {} \n", q.content.green().bold(), q.author.magenta());
     } else {
-        println!("No quote found");
+        println!("\n {} \n", "Something went wrong!".red());
     }
 }
 
